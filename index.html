@@ -1,29 +1,203 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/002adaeb9f.js" crossorigin="anonymous"></script>
     <title>Alt-Home</title>
 </head>
+
 <body>
-    <nav>
-        <div></div>
-        <div></div>
-    </nav>
+    > <header>
+        <!--logo-->
+        <div class="logo">
+            <h1>Alt-Home</h1>
+            <h2>Trouvez une chambre près de chez vous <br />
+                Pour la nuit ou pour la semaine </h2>
+        </div>
+        <!--block recherche-->
+        <div class="search">
+            <p><i class="fa-solid fa-location-dot"></i></p>
+            <input type="search" placeholder="proche de.">
+            <button>Rechercher</button>
+        </div>
+        <!--info sous recherche-->
+        <div class="info">
+            <p><i class="fa fa-light fa-circle-info"></i></p>
+            <p>plus de 300 chambres dans cette ville</p>
+        </div>
 
-    <header>
-       
-        <article> <h1></h1>
-       <h2></h2>
-       <h3></h3>
-       <button></button>
-       <input type="search" placeholder="Choisissez une région">
-</article>
-       
-
+        <!--filtres-->
+        <div>
+            <p><a href="#">Filtres</a></p>
+        </div>
+        <div><i class="fa-solid fa-people-group"></i>
+            <p><a href="#">Familiale</a></p>
+        </div>
+        <div><i class="fa fa-solid fa-euro-sign"></i>
+            <p><a href="#">Economique</a></p>
+        </div>
+        <div><i class="fa fa-solid fa-dog"></i>
+            <p><a href="#">Animaux Autorisés</a></p>
+        </div>
     </header>
 
+
+    <nav>
+        <div class="button_head">
+            <p><a href="#">Acceuil</a></p>
+            <p><a href="#">Hébergement</a></p>
+        </div>
+
+    </nav>
+
+    <section>
+        <h2>Les favoris</h2>
+        <div class="card">
+            <a href="#"><img src="image/best_bedroom_1.png" alt="Belle chambre parentale marine">
+                <h3>Chambre parentale marine</h3>
+                <p>Nuit à partir de 25€ </p>
+                <p><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#"><img src="image/best_bedroom_2.png" alt="Belle Chambre cocooning">
+                <h3>Chambre cocooning</h3>
+                <p>Nuit à partir de 35€ </p>
+                <p><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#"><img src="image/best_bedroom_3.png" alt="Belle Chambre féérique">
+                <h3>Chambre féérique</h3>
+                <p>Nuit à partir de 30€ </p>
+                <p><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#"> <img src="image/best_bedroom_4.png" alt="Belle Suite parentale">
+                <h3>Suite parentale</h3>
+                <p>Nuit à partir de 50€ </p>
+                <p><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <aside>
+        <h2>LUXE</h2>
+        <div class="lux1">
+            <a href="#"> <img src="image/luxe1.png" alt="belle chambre de luxe avec vue sur mer"></a>
+        </div>
+
+        <div class="lux2">
+            <a href="#"> <img src="image/best_bedroom_2.png" alt="belle chambre de luxe en ville"> </a>
+        </div>
+
+        <div class="lux3">
+            <a href="#"> <img src="image/best_bedroom_3.png" alt="belle chambre marine">
+            </a>
+        </div>
+    </aside>
+
+    <section>
+        <h2>Nos hébergements</h2>
+        <article class="card top">
+            <div class="card">
+                <a href="#"><img src="image/basic1.jpeg" alt="belle Chambre boisée">
+                    <h3>Chambre boisée</h3>
+                    <p>Nuit à partir de 20€ </p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#"><img src="image/basic2.jpeg" alt="belle chambre princesse">
+                    <h3>Chambre princesse</h3>
+                    <p>Nuit à partir de 40€ </p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#"><img src="image/basic3.jpeg" alt="belle suite avec vue">
+                    <h3>Suite avec vue</h3>
+                    <p>Nuit à partir de 80€ </p>
+                </a>
+            </div>
+        </article>
+        <article class="card bottom">
+            <div class="card">
+                <a href="#"> <img src="image/basic4.jpg" alt="belle chambre cozy">
+                    <h3>Chambre cozy</h3>
+                    <p>Nuit à partir de 48€ </p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#"><img src="image/basic5.jpg" alt="belle chambre ouverte">
+                    <h3>Chambre ouverte</h3>
+                    <p>Nuit à partir de 30€ </p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#"> <img src="image/basic6.jpeg" alt="belle chambre bleue">
+                    <h3>Chambre bleue</h3>
+                    <p>Nuit à partir de 35€ </p>
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <article>
+            <h3>
+                A propos
+            </h3>
+            <p><a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales de ventes</a>
+                <a href="#">Données et confidentialité</a>
+            </p>
+        </article>
+
+        <article>
+            <h3>
+                Nos hébergements
+            </h3>
+            <p><a href="#">Charte qualité</a>
+        </article>
+        <article>
+            <h3>
+                Assistance
+            </h3>
+            <p><a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
+        </article>
+    </footer>
 </body>
+
 </html>
