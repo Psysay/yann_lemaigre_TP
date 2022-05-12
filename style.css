@@ -10,8 +10,22 @@ body{
     
 }
 
-.menu, .info, .filtres, article, .card{
+.menu, .info, .filtres, article, .card, .button_head{
     display: flex;  
+}
+
+.button_head{
+    justify-content: end;
+}
+
+.button_head li{
+    padding: 1rem;
+    margin-right: 1.5rem;
+    border-top: solid 3px rgb(63, 63, 228);
+}
+
+header{
+    margin-left: 4rem;
 }
 
 .logo{
@@ -23,6 +37,9 @@ body{
     margin: 0;
     font-family: 'Roboto Mono', monospace;
     font-size: 0.8rem;  
+}
+.logo strong{
+    font-weight:500;
 }
 
 h1{
@@ -70,14 +87,31 @@ a i{
 }
 
 /* la barre de filtres */
+
+.name_filtres{
+    font-weight: bold;
+    border: none !important;
+}
+
 .filtres{
     margin-right: 5rem;
     justify-content: space-around;
     align-items: center;
 }
+.filtres p{
+    border: solid 1px black;
+    border-radius: 0px 25px 25px 0;
+    padding: 0.5rem 1.5rem;
+}
 
 .filtres i{
+    font-size: 1.5rem;
     margin-left: 1.5rem;
+    color: white;
+    background-color: rgb(63, 63, 228);
+    border-radius: 50%;
+    padding: 0.5rem;
+    transform: translate(50%)
 }
 
 
