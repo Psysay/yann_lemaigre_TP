@@ -1,3 +1,5 @@
+/* centré section luxe, même display que favoris pour hebergement mettre un wrap entre filtres et recherche. */
+
 *{
     box-sizing: border-box;   
 }
@@ -134,7 +136,6 @@ justify-content: space-around;
     border-radius: 2rem;
     margin: 1.5rem;
 }
-
 .card{
     min-width: 275px;
     width: 290px;
