@@ -17,6 +17,12 @@ body{
 .logo{
     font-family: 'Caveat', cursive;
     font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.logo p {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8rem;  
 }
 
 h1{
@@ -38,13 +44,16 @@ h3{
     margin-top: 0.4rem;
     margin-bottom: 0.2rem;
 }
+/* H2 de nos hébergements */
 .heberg{
     border: solid 5px rgb(240, 240, 240) ;
 }
+/* H2 les favoris */
 .fav{
     margin-top: 1rem;
     color: rgb(63, 63, 228);
 }
+
 
 a{
     text-decoration: none;
@@ -55,17 +64,12 @@ a i{
     color: rgb(63, 63, 228);
 }
 
-.logo p {
-    margin: 0;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 0.8rem;
-    
-}
-
 .menu{
     justify-content: space-between;
+    align-items: center;
 }
 
+/* la barre de filtres */
 .filtres{
     margin-right: 5rem;
     justify-content: space-around;
@@ -75,6 +79,16 @@ a i{
 .filtres i{
     margin-left: 1.5rem;
 }
+
+
+.info i{
+    color: rgb(63, 63, 228);
+}
+.info p{
+font-size: smaller;
+margin-top: 0em;
+}
+
 
 article{
     flex-wrap: wrap;
@@ -111,7 +125,7 @@ justify-content: space-around;
 @media screen and ( min-width: 1400px )
 {.flex_fav_lux {display: flex;}}
 
-    .lux {width: 450px; }
+    .lux {width: 400px; }
 
 @media screen and (max-width: 1400px){
     .aside_img {display: flex;}
@@ -123,8 +137,8 @@ justify-content: space-around;
 
 aside img{
     text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     width: 87%;
     border-radius: 1.5rem;
     height: 170px;
