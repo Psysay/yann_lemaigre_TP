@@ -1,5 +1,3 @@
-/* centré section luxe, même display que favoris pour hebergement mettre un wrap entre filtres et recherche. */
-
 *{
     box-sizing: border-box;   
 }
@@ -23,6 +21,9 @@ body{
 .button_head li{
     padding: 1rem;
     margin-right: 1.5rem;
+}
+
+.button_head li:active, .button_head li:hover {
     border-top: solid 3px rgb(63, 63, 228);
 }
 
@@ -64,7 +65,7 @@ h3{
     margin-bottom: 0.2rem;
 }
 /* H2 de nos hébergements */
-.heberg{
+#heberg{
     border: solid 5px rgb(240, 240, 240) ;
 }
 /* H2 les favoris */
@@ -73,29 +74,55 @@ h3{
     color: rgb(63, 63, 228);
 }
 
-
+/*régles basiques de liens */
 a{
     text-decoration: none;
     color: black;
 }
-
 a i{
     color: rgb(63, 63, 228);
 }
-
+/*le block menu (search + filtres) */
 .menu{
     justify-content: space-between;
     align-items: center;
+
+}
+
+/*les elements du block search */
+.search{
+    min-width: 293px;
+    display: flex;
+}
+.search i{
+    font-size: 1.2rem;
+    background-color: lightgray;
+    border-radius: 3px 0 0 3px;
+}
+button, i , input{
+    display: block;
+    padding: 6px;
+    border-style: none ;
+}
+input{
+    box-shadow: inset 0px 1px 3px 0px;
+}
+
+button{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(46, 94, 250);
+    border-radius: 0 5px 5px 0;
 }
 
 /* la barre de filtres */
-
 .name_filtres{
     font-weight: bold;
     border: none !important;
 }
 
 .filtres{
+    margin-left: 3rem;
     margin-right: 5rem;
     justify-content: space-around;
     align-items: center;
@@ -104,6 +131,7 @@ a i{
     border: solid 1px black;
     border-radius: 0px 25px 25px 0;
     padding: 0.5rem 1.5rem;
+    flex:none;
 }
 
 .filtres i{
@@ -116,7 +144,16 @@ a i{
     transform: translate(50%)
 }
 
+@media screen and (max-width: 1200px) {
+     .filtres p{
+         display: none;
+    visibility: hidden;
+}
 
+    
+}
+
+/* la petite ligne d'information sous block search */
 .info i{
     color: rgb(63, 63, 228);
 }
@@ -146,7 +183,10 @@ justify-content: space-around;
     border: 5px solid rgb(240, 240, 240);
     padding-bottom: 1rem;
 }
-
+.card:hover{
+    transform: scale(1.1) ;
+    box-shadow: 10px 10px 10px ;
+}
 .card img{
     min-width: 240px;
     width: 100%;
@@ -167,7 +207,7 @@ justify-content: space-around;
 }
 
 @media screen and (max-width: 1200px)
-    { .aside_img {flex-wrap: wrap;}
+    { .aside_img {flex-wrap: wrap; justify-content: center;}
 }
 
 aside img{
