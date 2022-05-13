@@ -94,15 +94,15 @@ a i{
     min-width: 293px;
     display: flex;
 }
-.search i{
-    font-size: 1.2rem;
-    background-color: lightgray;
-    border-radius: 3px 0 0 3px;
-}
 button, i , input{
     display: block;
     padding: 6px;
     border-style: none ;
+}
+.search i{
+    font-size: 1.2rem;
+    background-color: lightgray;
+    border-radius: 3px 0 0 3px;
 }
 input{
     box-shadow: inset 0px 1px 3px 0px;
@@ -122,8 +122,10 @@ button{
 }
 
 .filtres{
-    margin-left: 3rem;
-    margin-right: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     justify-content: space-around;
     align-items: center;
 }
@@ -133,7 +135,24 @@ button{
     padding: 0.5rem 1.5rem;
     flex:none;
 }
+.button-filtre{
+    display: flex;
+    align-items: center;
+}
+.filtres a:focus i{
+    background-color: lightgreen;
+    justify-content: center;
+}
+.filtres a:focus p{
+    border: solid 1px rgb(63, 63, 228);
+    background-color: rgb(240, 240, 240);
+}
+    
 
+
+.filtres a:hover p{
+visibility: initial;
+}
 .filtres i{
     font-size: 1.5rem;
     margin-left: 1.5rem;
@@ -145,12 +164,30 @@ button{
 }
 
 @media screen and (max-width: 1200px) {
-     .filtres p{
+     .text{
          display: none;
     visibility: hidden;
+}    
 }
 
-    
+@media screen and (max-width: 800px ) {.menu{
+    display: block;
+} 
+.filtres{
+    border: solid 1px;  
+    border-radius: 15px;
+    padding-left: 2rem ;
+    margin-right: 0px;
+    margin-left: -1.7rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.filtres i{
+    transform: none;
+} 
+.search{
+    justify-content: center;
+}  
 }
 
 /* la petite ligne d'information sous block search */
